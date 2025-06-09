@@ -104,6 +104,43 @@ body {
   font-weight: bold;
 }
 
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.nav-button {
+  background-color: #3c57f1; 
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-button:disabled {
+  background-color: #94cdff;
+  cursor: not-allowed;
+}
+
+.nav-button:hover:not(:disabled) {
+  background-color: #007bff;
+}
+
+.option-button.correct {
+  background-color: #28a745 !important; 
+  color: white;
+}
+
+.option-button.incorrect {
+  background-color: #dc3545 !important; 
+  color: white;
+}
+
+
 @media (max-width: 600px) {
   .quiz-box {
     padding: 1.25rem;
